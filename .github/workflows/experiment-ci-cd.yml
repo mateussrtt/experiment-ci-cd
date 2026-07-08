@@ -42,7 +42,8 @@ jobs:
           sudo apt-get install meson
           cd test
           gcc -o test test.c -lcriterion
-          ./test --xml > test.xml
+          ./test --xml=test.xml
+            ls -la
 
       - name: Show results
         uses: EnricoMi/publish-unit-test-result-action@v2
